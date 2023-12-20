@@ -1,0 +1,62 @@
+@charset "utf-8";
+html * {
+    box-sizing: border-box;
+}
+
+/* 全体のcss */
+body {
+    max-width: 1140px;
+    margin: 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+/* ヘッダーのcss */
+
+header {
+    display: flex;  
+    justify-content: space-between;
+}
+header h1 i {
+    font-size: 30px;
+    padding-left: 0.5rem;
+}
+.nav-menu li {
+    padding: 0 16px;
+    list-style: none;
+}
+
+/* メインのcss */
+.about-content, .like-content {
+    padding: 20px 4%;
+}
+.about-img img {
+    border-radius: 135px;
+    border: 6px solid #6495ed;
+}
+.about-list ul li 
+    
+.about-container {
+    
+    text-align: center;
+}
+
+
+/* 画面横幅が768px以上のときのCSS */
+
+@media(min-width: 768px) { 
+    .nav-menu {
+        display: flex;
+    }
+    .about-flex, .like-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+    .like-box {
+        width: calc(100%/4);
+        padding: 16px;
+    }
+    
+}
